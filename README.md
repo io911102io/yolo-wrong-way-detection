@@ -3,6 +3,7 @@ YOLO 車輛偵測與逆向判定系統
 Demo影片 https://www.youtube.com/watch?v=iR8e_upL3Zg
 
 專案說明
+
     本專案基於 Ultralytics YOLO 模型，結合影像處理與簡易 GUI 介面，實現以下功能：
 
     車輛偵測與追蹤（Car / Motorcycle / Bus / Truck）
@@ -18,6 +19,7 @@ Demo影片 https://www.youtube.com/watch?v=iR8e_upL3Zg
     系統支援本地影片（MP4）與 RTSP 串流輸入，適用於交通監控或智慧城市相關應用場景。
 
 系統架構簡述
+
     使用 OpenCV 處理影像讀取與顯示
 
     使用 Tkinter 建立操作介面
@@ -29,11 +31,13 @@ Demo影片 https://www.youtube.com/watch?v=iR8e_upL3Zg
     使用 JSON 檔案紀錄違規事件
 
 執行方式
+
     1. 安裝依賴套件：pip install -r requirements.txt
 
     2. 執行 main.py
 
 使用說明
+
     1.點選「選擇 MP4」或「設定 RTSP」選擇影片來源
 
     2.點選「開始偵測」開始即時車輛追蹤
@@ -47,11 +51,13 @@ Demo影片 https://www.youtube.com/watch?v=iR8e_upL3Zg
     6.違規車輛會自動記錄在 violations.json
 
 輸出說明
+
     紀錄所有逆向行駛事件
 
     包含 track_id、車種、時間等資訊
 
 硬體環境與資源使用
+
     CPU：Intel i9-12900K
 
     GPU：未使用（CPU 推論）
@@ -61,14 +67,17 @@ Demo影片 https://www.youtube.com/watch?v=iR8e_upL3Zg
     GPU 使用率：0%
 
 分析速度（FPS）
+
     約 15 FPS（在 CPU 推論情況下）
 
 模型來源
+
     使用 Ultralytics 提供之 YOLO 模型
 
     模型：yolo11n.pt
 
 開發過程中遇到的問題
+
     在開發過程中，為了提升測試與操作便利性，持續新增多項功能（如暫停播放、影片跳轉等）
 
     然而，功能增加後出現以下情況：
@@ -80,7 +89,9 @@ Demo影片 https://www.youtube.com/watch?v=iR8e_upL3Zg
     因此後期花了一些時間進行整合與穩定性調整
 
 開發時長
+
     約 4~5 小時
 
 面試題目回饋
+
     此題目與我之前做過的專題有部分相關，使我在製作時更有方向可以有什麼架構，需要甚麼東西，以及怎麼做可以反覆操作測試
