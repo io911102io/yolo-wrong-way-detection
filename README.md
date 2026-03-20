@@ -1,5 +1,7 @@
 YOLO 車輛偵測與逆向判定系統
 
+Demo影片 https://studio.youtube.com/video/iR8e_upL3Zg/edit
+
 專案說明
     本專案基於 Ultralytics YOLO 模型，結合影像處理與簡易 GUI 介面，實現以下功能：
 
